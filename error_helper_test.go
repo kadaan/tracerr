@@ -2,7 +2,7 @@
 package tracerr_test
 
 import (
-	"github.com/ztrue/tracerr"
+	"github.com/kadaan/tracerr"
 )
 
 func addFrameA(message string) error {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ztrue/tracerr"
+	"github.com/kadaan/tracerr"
 )
 
 type ErrorTestCase struct {
@@ -32,9 +32,9 @@ func TestError(t *testing.T) {
 			ExpectedMessage: "error message text",
 			ExpectedStackTrace: []tracerr.Frame{
 				{
-					Func: "github.com/ztrue/tracerr_test.TestError",
+					Func: "github.com/kadaan/tracerr_test.TestError",
 					Line: 31,
-					Path: "/src/github.com/ztrue/tracerr/error_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_test.go",
 				},
 			},
 		},
@@ -43,9 +43,9 @@ func TestError(t *testing.T) {
 			ExpectedMessage: "invalid argument 5: \"foo\"",
 			ExpectedStackTrace: []tracerr.Frame{
 				{
-					Func: "github.com/ztrue/tracerr_test.TestError",
+					Func: "github.com/kadaan/tracerr_test.TestError",
 					Line: 42,
-					Path: "/src/github.com/ztrue/tracerr/error_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_test.go",
 				},
 			},
 		},
@@ -54,9 +54,9 @@ func TestError(t *testing.T) {
 			ExpectedMessage: "wrapped error",
 			ExpectedStackTrace: []tracerr.Frame{
 				{
-					Func: "github.com/ztrue/tracerr_test.TestError",
+					Func: "github.com/kadaan/tracerr_test.TestError",
 					Line: 53,
-					Path: "/src/github.com/ztrue/tracerr/error_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_test.go",
 				},
 			},
 		},
@@ -65,24 +65,24 @@ func TestError(t *testing.T) {
 			ExpectedMessage: "error with stack trace",
 			ExpectedStackTrace: []tracerr.Frame{
 				{
-					Func: "github.com/ztrue/tracerr_test.addFrameC",
+					Func: "github.com/kadaan/tracerr_test.addFrameC",
 					Line: 17,
-					Path: "/src/github.com/ztrue/tracerr/error_helper_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_helper_test.go",
 				},
 				{
-					Func: "github.com/ztrue/tracerr_test.addFrameB",
+					Func: "github.com/kadaan/tracerr_test.addFrameB",
 					Line: 13,
-					Path: "/src/github.com/ztrue/tracerr/error_helper_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_helper_test.go",
 				},
 				{
-					Func: "github.com/ztrue/tracerr_test.addFrameA",
+					Func: "github.com/kadaan/tracerr_test.addFrameA",
 					Line: 9,
-					Path: "/src/github.com/ztrue/tracerr/error_helper_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_helper_test.go",
 				},
 				{
-					Func: "github.com/ztrue/tracerr_test.TestError",
+					Func: "github.com/kadaan/tracerr_test.TestError",
 					Line: 64,
-					Path: "/src/github.com/ztrue/tracerr/error_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_test.go",
 				},
 			},
 		},
@@ -91,24 +91,24 @@ func TestError(t *testing.T) {
 			ExpectedMessage: "error wrapped twice",
 			ExpectedStackTrace: []tracerr.Frame{
 				{
-					Func: "github.com/ztrue/tracerr_test.addFrameC",
+					Func: "github.com/kadaan/tracerr_test.addFrameC",
 					Line: 17,
-					Path: "/src/github.com/ztrue/tracerr/error_helper_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_helper_test.go",
 				},
 				{
-					Func: "github.com/ztrue/tracerr_test.addFrameB",
+					Func: "github.com/kadaan/tracerr_test.addFrameB",
 					Line: 13,
-					Path: "/src/github.com/ztrue/tracerr/error_helper_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_helper_test.go",
 				},
 				{
-					Func: "github.com/ztrue/tracerr_test.addFrameA",
+					Func: "github.com/kadaan/tracerr_test.addFrameA",
 					Line: 9,
-					Path: "/src/github.com/ztrue/tracerr/error_helper_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_helper_test.go",
 				},
 				{
-					Func: "github.com/ztrue/tracerr_test.TestError",
+					Func: "github.com/kadaan/tracerr_test.TestError",
 					Line: 90,
-					Path: "/src/github.com/ztrue/tracerr/error_test.go",
+					Path: "/src/github.com/kadaan/tracerr/error_test.go",
 				},
 			},
 		},

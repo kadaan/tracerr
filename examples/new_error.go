@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ztrue/tracerr"
+	"github.com/kadaan/tracerr"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package main
 import (
 	"io/ioutil"
 
-	"github.com/ztrue/tracerr"
+	"github.com/kadaan/tracerr"
 )
 
 func main() {
